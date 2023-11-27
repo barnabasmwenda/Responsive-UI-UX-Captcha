@@ -1,0 +1,144 @@
+:root {
+  --color-white: #ffffff;
+  --color-background: #ffffff;
+  --color-gray: #f5f5f5;
+  --color-primary: #0056b3;
+  --color-text: #333333;
+  --color-muted: #bdbdbd;
+  --font-family: "Open Sans", sans-serif;
+  --border-radius-small: 4px;
+  --border-radius-big: 4px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+h1,
+label {
+  color: var(--color-text);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.main-button,
+.secondary-button {
+  border: none;
+  padding: 12px;
+  outline: none;
+  user-select: none;
+  transition: 0.4s ease;
+  border-radius: var(--border-radius-small);
+}
+
+.main-button {
+  width: fit-content;
+  background: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.main-button:hover {
+  background: #007bff;
+}
+
+.secondary-button {
+  width: fit-content;
+  background: var(--color-gray);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background: #d5f4ff;
+}
+
+.d-flex-center-between {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.d-flex,
+.captcha-container,
+.captcha-preview .row,
+.captcha-preview .right {
+  display: flex;
+  align-items: center;
+}
+
+.captcha-container,
+.container {
+  flex-direction: column;
+}
+
+.captcha-preview .right {
+  justify-content: end;
+}
+
+.captcha-box {
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid var(--color-gray);
+  border-radius: var(--border-radius-big);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.captcha-field input,
+.captcha-preview,
+.menu-button {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  outline: none;
+}
+
+.captcha-field input {
+  background: var(--color-gray);
+  border-radius: var(--border-radius-big);
+  transition: 0.2s ease-in;
+}
+
+.captcha-field input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.25);
+}
+
+.captcha-preview {
+  border-radius: var(--border-radius-big);
+  border: 2px dotted var(--color-muted);
+  margin: 24px 0px;
+  height: 80px;
+  user-select: none;
+}
+
+.captcha-preview .row {
+  flex: 50%;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+}

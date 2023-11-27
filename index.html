@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive UI/UX Captcha</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="captcha-box">
+        <h1 class="mb-2">Responsive UI/UX Captcha</h1>
+        <label class="mb-2">Enter the values in the dotted section</label>
+        <div class="captcha-preview d-flex mb-2">
+          <div class="left row" id="captchaContent"></div>
+          <div class="right row">
+            <span
+              class="material-symbols-outlined secondary-button"
+              id="btnRefreshCaptcha"
+              title="Refresh Captcha"
+            >
+              refresh
+            </span>
+          </div>
+        </div>
+        <div class="mb-2 captcha-field inputs mb-2">
+          <input
+            type="text"
+            id="txtCaptcha"
+            placeholder="Enter the captcha values"
+          />
+        </div>
+        <div class="mb-2 inputs d-flex flex-end">
+          <button class="main-button" type="button" id="btnSubmitCaptcha">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
